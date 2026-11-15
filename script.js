@@ -25,7 +25,7 @@ function showOverlay({ success }) {
   errorTitle.classList.toggle('success', success);
   errorText.textContent = success
     ? 'ERROR. Report not sent! Contact live chat support instead.'
-    : 'Something went wrong and your report was not sent. Please contact live chat support instead.';
+    : 'ERROR. Report not sent! Contact live chat support instead.';
   errorPage.classList.toggle('success-page', success);
   errorPage.hidden = false;
   document.getElementById('contactLiveSupport').focus();
