@@ -21,10 +21,10 @@ const errorText = document.getElementById('errorText');
 function showOverlay({ success }) {
   errorIcon.textContent = success ? '✕' : '!';
   errorIcon.classList.toggle('success', success);
-  errorTitle.textContent = success ? 'Success' : 'Error';
+  errorTitle.textContent = success ? 'ERROR!' : 'Error';
   errorTitle.classList.toggle('success', success);
   errorText.textContent = success
-    ? 'Successfully sent. Our team will review your report.'
+    ? 'ERROR. Your report not sent! Contact live chat support instead.'
     : 'Something went wrong and your report was not sent. Please contact live chat support instead.';
   errorPage.classList.toggle('success-page', success);
   errorPage.hidden = false;
